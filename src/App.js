@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 //import NoteContext from "./context/Notes/NoteContext";
 import NoteState from "./context/Notes/NoteState";
+import Alert from "./components/Alert";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
     <Router>
     
     <Navbar/>
-    
+    <Alert message='this is alert' />
+    <div className="container">
     <Routes>
     <Route path="/" element={<Home/>}/>
 
@@ -24,7 +26,7 @@ function App() {
 
 
     </Routes>
-     
+    </div>
 
 
     </Router>
