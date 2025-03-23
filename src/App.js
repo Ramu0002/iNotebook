@@ -7,6 +7,8 @@ import About from "./components/About";
 //import NoteContext from "./context/Notes/NoteContext";
 import NoteState from "./context/Notes/NoteState";
 import Alert from "./components/Alert";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 function App() {
   return (
@@ -22,6 +24,10 @@ function App() {
     <Route path="/" element={<Home/>}/>
 
     <Route exact path="/about" element={<About/>}/>
+
+    <Route exact path="/login" element={<Login/>}/>
+
+    <Route exact path="/signup" element={<Signup/>}/>
 
 
 
